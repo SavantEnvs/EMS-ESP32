@@ -1,0 +1,4 @@
+// Leaks are not what this fleet fuzzes for; ASan's memory-safety checks and UBSan stay on.
+extern "C" int __lsan_is_turned_off() {
+    return 1;
+}
